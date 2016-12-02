@@ -2,4 +2,4 @@
 ~$*.xlsx
 
 # file
-*.DS*
+.DS_Store
