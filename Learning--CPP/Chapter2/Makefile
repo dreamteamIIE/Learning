@@ -1,4 +1,4 @@
-CPPFLAGS=
+PPFLAGS=
 CFLAGS= -g -Wall
 LDFLAGS= 
 CC=g++
@@ -19,4 +19,3 @@ $(target):$(obj)
 clean:
 	-rm -f *.o
 	-rm -f app
-
