@@ -3,3 +3,10 @@
 
 # file
 *.DS_Store
+
+# CPP
+*.o
+*.so
+*.out
+
+
