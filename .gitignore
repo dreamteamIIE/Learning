@@ -2,6 +2,7 @@
 ~$*.xlsx
 
 # file
+<<<<<<< HEAD
 *.DS_Store
 
 # CPP
@@ -10,3 +11,6 @@
 *.out
 
 
+=======
+.DS_Store
+>>>>>>> 9449ffee7a017f78a5808964764ae8ab5d73bad7
