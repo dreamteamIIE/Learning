@@ -1,5 +1,5 @@
 // ch3.cpp : 定义控制台应用程序的入口点。
-//Ctrl+F5 
+//Ctrl+F5  debug
 
 #include "stdafx.h"
 
