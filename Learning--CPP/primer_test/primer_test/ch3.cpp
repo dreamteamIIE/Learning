@@ -23,12 +23,13 @@ int main()
 	//while (cin >> i)
 	while (getline(cin, i))
 	{
-	//if (i == "\n") break;
-	if (i.empty()) break; 
+		//if (i == "\n") break;
+		if (i.empty()) break;
 		v.push_back(i);
 	}
-	for(auto str:v){
-	cout << str<< endl;}
+	for (auto str : v) {
+		cout << str << endl;
+	}
 	cout << v.size() << endl;
 	//system("pause");
 	return 0;
