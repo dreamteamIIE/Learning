@@ -16,7 +16,7 @@ using std::vector;
 using std::string;
 using std::istream;
 
-int main()
+void ch3()
 {
 	vector<string> v;
 	string i;
@@ -32,6 +32,6 @@ int main()
 	}
 	cout << v.size() << endl;
 	//system("pause");
-	return 0;
+	//return 0;
 }
 
