@@ -14,3 +14,19 @@
 =======
 .DS_Store
 >>>>>>> 9449ffee7a017f78a5808964764ae8ab5d73bad7
+/Learning--CPP/ch3/ch3/ch3/Debug
+/Learning--CPP/ch3/ch3/Debug
+/Learning--CPP/ch3/ch3/ipch/CH3-4cfb89a1
+*.opendb
+*.db
+*.sln
+/Learning--CPP/primer_test/.vs/primer_test/v14
+/Learning--CPP/primer_test/ipch/PRIMER_TEST-314c6457
+/Learning--CPP/primer_test/Debug
+/Learning--CPP/primer_test/primer_test/Debug
+/Learning--CPP/primer_test/primer_test/targetver.h
+/Learning--CPP/primer_test/primer_test/stdafx.h
+/Learning--CPP/primer_test/primer_test/stdafx.cpp
+/Learning--CPP/primer_test/primer_test/primer_test.vcxproj.filters
+/Learning--CPP/primer_test/primer_test/primer_test.vcxproj
+*.txt
