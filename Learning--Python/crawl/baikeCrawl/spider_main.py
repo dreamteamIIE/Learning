@@ -11,24 +11,30 @@ class Crawler(object):
         self.URLmanager = html_URLmanager.URLmanager()
 
 
+    def crawl(self, root_url):
+        self.URLmanager.add_URLS([root_url])
+        count = 1
+        while self.URLmanager.has_new_url():
+            try:
+                if count == 10:
+                    break
+                url = self.URLmanager.get_newURL()
+                html_cont = self.downloader.download(url)
+                urls, data_parsed = self.parser.parse(html_cont)
+                self.URLmanager.add_URLS(urls)
+                print "Title: %s" % data_parsed['title']
+                print 'Summary : \n\t %s' % data_parsed['summary']
+                count+=1
+            except Exception, e:
+                print e
+
+        print 'collect %d records' % count
+
+
 if __name__ == "__main__":
     root_url = 'http://baike.baidu.com/item/Python'
-    crawler = Crawler()
-    crawler.URLmanager.add_URLS([root_url])
-    count = 1
-    while True:
-        try:
-            if count == 10:
-                break
-            url = crawler.URLmanager.get_newURL()
-            result = crawler.downloader.download(url)
-            titleName, urls, content = crawler.parser.parse(result)
-            crawler.URLmanager.add_URLS(urls)
-            print "Title: %s" % titleName
-            print 'Summary : \n\t %s' % content
-            count+=1
-        except Exception, e:
-            print e
+    obj_crawler = Crawler()
+    obj_crawler.crawl(root_url)
 
-    print 'collect %d records' % count
+
 
