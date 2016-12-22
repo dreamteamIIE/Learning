@@ -5,10 +5,11 @@ import re
 class Parser(object):
     def parse(self, html):
         soup = BeautifulSoup(html,'lxml')
+
         # 名称
         # <dd class="lemmaWgt-lemmaTitle-title">
         #     <h1>Python</h1>
-        result = soup.find('dd', class_='lemmaWgt-lemmaTitle-title').find('h1').string
+        titleName = soup.find('dd', class_='lemmaWgt-lemmaTitle-title').find('h1').string
 
         # 摘要
         # <div class="lemma-summary" label-module="lemmaSummary">
@@ -24,5 +25,5 @@ class Parser(object):
         # <a target="_blank" href="/view/592974.htm">解释器</a>
         urls = []
         urls = soup.find_all('a', href=re.compile(r'/view/\d+\.htm'))
-        print 'find %d urls' % len(urls)
-        return result,urls,str_result
+        urls = ['http://baike.baidu.com'+item.attrs['href'] for item in urls]
+        return titleName, urls, str_result
