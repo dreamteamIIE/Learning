@@ -2,8 +2,8 @@
  * Created by wuzewei on 16/12/29.
  */
 
-//console.log("hello world");
-//phantom.exit();
+console.log("hello world");
+phantom.exit();
 
 // 网页截图
 //var page = require('webpage').create();
@@ -11,7 +11,7 @@
 //    console.log('Status: ' + status);
 //    if(status == 'success')
 //    {
-//        page.render('example.png');
+//        page.render('example1.png');
 //    }
 //    phantom.exit();
 //});
@@ -72,7 +72,7 @@
 //var url = 'http://www.baidu.com'
 //var page = require('webpage').create();
 //page.open(url, function(status){
-//   page.render('baidu.pdf');
+//   page.render('baidu1.pdf');
 //});
 //phantom.exit();
 
