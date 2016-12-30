@@ -2,7 +2,6 @@
 ~$*.xlsx
 
 # file
-<<<<<<< HEAD
 *.DS_Store
 
 # CPP
@@ -10,6 +9,9 @@
 *.so
 *.out
 
+#python
+*.idea
+*.pyc
 
 =======
 .DS_Store
