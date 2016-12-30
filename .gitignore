@@ -10,7 +10,7 @@
 *.out
 
 #python
-*.idea
+*.idea/
 *.pyc
 
 =======
